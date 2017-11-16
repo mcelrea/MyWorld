@@ -6,8 +6,8 @@ public class Bug extends Actor {
 
     private double speed = 40;
 
-    public Bug(double x, double y) {
-        super(x,y,"images/boxBug.png");
+    public Bug(double x, double y, String imagePath) {
+        super(x,y,imagePath);
     }
 
     @Override

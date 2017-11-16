@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    World world = new World();
+    public static World world = new World();
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -27,7 +27,8 @@ public class Main extends Application {
         world.addActor(new Actor(100,200,"images/actor.png"));
         world.addActor(new Actor(400,100,"images/actor.png"));
         world.addActor(new Actor(200,500,"images/actor.png"));
-        world.addActor(new Bug(300,200));
+        world.addActor(new Bug(300,200, "images/boxBug.png"));
+        world.addActor(new RandomBug(400,300, "images/bug.png"));
 
         new AnimationTimer() {
             @Override
